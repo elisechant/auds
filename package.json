@@ -1,6 +1,9 @@
 {
 	"name": "auds",
 	"license": "MIT",
+	"engines": {
+		"node": "14.17.0"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/govau/design-system-components"
@@ -22,6 +25,7 @@
 		"treeify": "^1.1.0"
 	},
 	"scripts": {
+		"clean": "git clean -xdf",
 		"scaffolding": "node ./scripts/helper.js scaffolding",
 		"bootstrap": "lerna bootstrap --hoist",
 		"build": "lerna run build",
