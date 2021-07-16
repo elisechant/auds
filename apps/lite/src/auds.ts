@@ -1,2 +1,2 @@
-import "./index.scss";
+import './styles/auds.scss';
 

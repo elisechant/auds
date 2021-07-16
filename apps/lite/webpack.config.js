@@ -9,9 +9,10 @@ NODE_ENV = 'development';
 const webpackConfig = {
 	mode: isDev ? 'development' : 'production',
 	entry: {
-		"auds.tokens": '/src/auds.tokens.ts',
+		"auds.tokens": './src/auds.tokens.ts',
+		"auds.variables": './src/auds.variables.ts',
 		"auds": './src/auds.ts',
-		"index": './src/index.tsx',
+		"docs": './src/index.tsx',
 	},
 	output: {
 		filename: `[name].js`,
