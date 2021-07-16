@@ -7,8 +7,8 @@ const isDev = process.env.NODE_ENV !== 'production';
 const webpackConfig = {
 	mode: isDev ? 'development' : 'production',
 	entry: {
-		tokens: '/src/index.tokens.ts',
-		auds: './src/index.auds.ts',
+		"auds.tokens": '/src/index.tokens.ts',
+		"auds": './src/index.auds.ts',
 	},
 	output: {
 		filename: '[name].js',
