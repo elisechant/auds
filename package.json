@@ -12,7 +12,10 @@
 		"autoprefixer": "^9.4.10",
 		"cfonts": "^2.4.2",
 		"chalk": "^2.4.2",
+		"cypress": "^7.7.0",
+		"cypress-image-snapshot": "^4.0.1",
 		"express": "^4.16.4",
+		"http-server": "^0.12.3",
 		"inquirer": "6.2.2",
 		"jest-cli": "^24.7.1",
 		"lerna": "^3.14.1",
@@ -34,7 +37,11 @@
 		"delete:node_modules": "lerna clean --yes && rimraf node_modules",
 		"delete:lib": "rimraf packages/*/lib",
 		"test:unit-test": "jest",
-		"test": "node scripts/helper.js test && node ./scripts/a11y.js"
+		"test": "node scripts/helper.js test && node ./scripts/a11y.js",
+		"serve:test": "http-server --no-dotfiles",
+		"test:integration": "cypress run --reporter cypress-image-snapshot/reporter --env failOnSnapshotDiff=false",
+		"test:integration:update": "npm run test:integration --env updateSnaphots=true",
+		"cypress:open": "cypress open NODE_OPTIONS=--max_old_space_size=4096"
 	},
 	"jest": {
 		"testRegex": "\\.spec.js$",
