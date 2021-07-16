@@ -4,23 +4,27 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isDev = process.env.NODE_ENV !== 'production';
 
+NODE_ENV = 'development';
+
 const webpackConfig = {
 	mode: isDev ? 'development' : 'production',
 	entry: {
-		"auds.tokens": '/src/index.tokens.ts',
-		"auds": './src/index.auds.ts',
+		"auds.tokens": '/src/auds.tokens.ts',
+		"auds": './src/auds.ts',
+		"index": './src/index.tsx',
 	},
 	output: {
-		filename: '[name].js',
+		filename: `[name].js`,
 		path: path.resolve(__dirname, 'dist'),
 		clean: true,
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: 'AuDS Lite',
+			template: './src/index.html',
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].css',
+			filename: `[name].css`,
 		}),
 	],
 	resolve: {
@@ -37,8 +41,10 @@ const webpackConfig = {
 				],
 			},
 			{
-				test: /\.(tsx|ts)?$/,
-				use: ['ts-loader' ],
+				test: /\.(js|tsx|ts)?$/,
+				use: [
+					'babel-loader'
+				],
 				exclude: /node_modules/,
 			},
 		]
