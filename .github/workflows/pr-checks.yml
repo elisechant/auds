@@ -23,5 +23,7 @@ jobs:
       run: yarn
     - name: Run
       run: yarn build
+    - name: Visual diff tests
+      run: npx chromatic --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
 
