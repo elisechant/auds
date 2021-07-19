@@ -24,20 +24,17 @@ Build assets
 
 ## Exports 
 
-### CSS
+### CSS / JS
 
 | Asset name | Description |
 | - | - |
 | auds.tokens.css | Design tokens |
 | auds.css | Full compiled CSS source |
+| auds.js | Full compiled JS source |
 
 ### HTML
 
 Can be copied from html templates, such as ./src/components/button/button-default.html.
-
-### JavaScript
-
-Not yet ported. 
 
 ## Tests 
 
