@@ -1,5 +1,7 @@
 # AuDS Lite
 
+🌐 https://auds.surge.sh/
+
 A simpler, vanilla AuDS. 
 
 * Platform agnostic (HTML, CSS, JS) system.

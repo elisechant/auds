@@ -4,8 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-NODE_ENV = 'development';
-
 const webpackConfig = {
 	mode: isDev ? 'development' : 'production',
 	entry: {
@@ -22,6 +20,8 @@ const webpackConfig = {
 		new HtmlWebpackPlugin({
 			title: 'AuDS Lite',
 			template: './src/index.html',
+			inject: "body",
+			scriptLoading: 'blocking',
 		}),
 		new MiniCssExtractPlugin({
 			filename: `[name].css`,
