@@ -1,60 +1,40 @@
 {
-	"name": "auds",
-	"license": "MIT",
+	"name": "@auds/lite",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "NODE_ENV=production webpack",
+		"start": "NODE_ENV=development webpack serve --open",
+		"serve": "npx http-server dist",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
 	"engines": {
 		"node": "14.17.0"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/govau/design-system-components"
-	},
+	"keywords": [],
+	"author": "Elise Chant",
+	"license": "ISC",
 	"devDependencies": {
-		"autoprefixer": "^9.4.10",
-		"cfonts": "^2.4.2",
-		"chalk": "^2.4.2",
-		"cypress": "^7.7.0",
-		"cypress-image-snapshot": "^4.0.1",
-		"express": "^4.16.4",
-		"http-server": "^0.12.3",
-		"inquirer": "6.2.2",
-		"jest-cli": "^24.7.1",
-		"lerna": "^3.14.1",
-		"node-sass": "^4.14.0",
-		"pa11y": "^5.1.0",
-		"postcss": "^8.2.10",
-		"puppeteer": "^1.13.0",
-		"rimraf": "^2.6.3",
-		"semver": "^5.6.0",
-		"treeify": "^1.1.0"
-	},
-	"scripts": {
-		"clean": "git clean -xdf",
-		"scaffolding": "node ./scripts/helper.js scaffolding",
-		"bootstrap": "lerna bootstrap --hoist",
-		"build": "lerna run build",
-		"publish": "lerna version --no-git-tag-version --no-push",
-		"nuke": "npm run delete:node_modules | npm run delete:lib",
-		"delete:node_modules": "lerna clean --yes && rimraf node_modules",
-		"delete:lib": "rimraf packages/*/lib",
-		"test:unit-test": "jest",
-		"test": "node scripts/helper.js test && node ./scripts/a11y.js",
-		"serve:test": "http-server --no-dotfiles",
-		"test:integration": "cypress run --reporter cypress-image-snapshot/reporter --env failOnSnapshotDiff=false",
-		"test:integration:update": "npm run test:integration --env updateSnaphots=true",
-		"cypress:open": "cypress open NODE_OPTIONS=--max_old_space_size=4096"
-	},
-	"jest": {
-		"testRegex": "\\.spec.js$",
-		"collectCoverageFrom": [
-			"packages/*/lib/js/*.js"
-		],
-		"coverageThreshold": {
-			"global": {
-				"branches": 0,
-				"functions": 0,
-				"lines": 0,
-				"statements": 0
-			}
-		}
+		"@storybook/addon-a11y": "^6.3.4",
+		"@storybook/addon-actions": "^6.3.4",
+		"@storybook/addon-essentials": "^6.3.4",
+		"@storybook/addon-links": "^6.3.4",
+		"@storybook/html": "^6.3.4",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.2.2",
+		"babel-preset-react-app": "^10.0.0",
+		"css-loader": "^5.2.6",
+		"html-webpack-plugin": "^5.3.2",
+		"mini-css-extract-plugin": "^2.1.0",
+		"rimraf": "^3.0.2",
+		"sass": "^1.35.2",
+		"sass-loader": "10",
+		"style-loader": "^2.0.0",
+		"typescript": "^4.3.5",
+		"webpack": "^5.44.0",
+		"webpack-cli": "^4.7.2",
+		"webpack-dev-server": "^3.11.2"
 	}
 }

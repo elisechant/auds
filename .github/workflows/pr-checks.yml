@@ -3,9 +3,6 @@ on:
   pull_request:
     branches:
       - main
-defaults:
-  run:
-    working-directory: ./apps/lite
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
@@ -15,6 +12,8 @@ jobs:
     steps:
     - name: Check out repository code
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
@@ -24,6 +23,11 @@ jobs:
     - name: Run
       run: yarn build
     - name: Visual diff tests
-      run: npx chromatic --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+      uses: chromaui/action@v1
+      # Chromatic GitHub Action options
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+        projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
 

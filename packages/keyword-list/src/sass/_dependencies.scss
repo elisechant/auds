@@ -1,7 +1,0 @@
-//dependencies
-@import '../../../core/src/sass/_module.scss';
-@import '../../../link-list/src/sass/_module.scss';
-@import '../../../body/src/sass/_module.scss'; //dependency via link-list
-
-//this module
-@import '_module.scss';
