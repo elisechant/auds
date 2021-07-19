@@ -1,6 +1,6 @@
-@import "auds-sass/core/lib/sass/_globals.scss";
+@import "components/core/sass/_globals.scss";
 
-@import "auds-sass/core/lib/sass/_module.scss";
+@import "components/core/sass/_module.scss";
 @import "auds-sass/accordion/lib/sass/_module.scss";
 @import "auds-sass/body/lib/sass/_module.scss";
 @import "auds-sass/link-list/lib/sass/_module.scss";
@@ -18,7 +18,7 @@
 @import "auds-sass/headings/lib/sass/_module.scss";
 @import "auds-sass/inpage-nav/lib/sass/_module.scss";
 @import "auds-sass/keyword-list/lib/sass/_module.scss";
-@import "auds-sass/main-nav/lib/sass/_module.scss";
+@import "components/main-nav/sass/_module.scss";
 @import "auds-sass/page-alerts/lib/sass/_module.scss";
 @import "auds-sass/responsive-media/lib/sass/_module.scss";
 @import "auds-sass/text-inputs/lib/sass/_module.scss";
