@@ -1,6 +1,6 @@
 {
 	"name": "@auds/lite",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -8,7 +8,8 @@
 		"start": "NODE_ENV=development webpack serve --open",
 		"serve": "npx http-server dist",
 		"storybook": "start-storybook -p 6006",
-		"build-storybook": "build-storybook"
+		"build-storybook": "build-storybook",
+		"feature": "yarn changeset"
 	},
 	"engines": {
 		"node": "14.17.0"
@@ -36,5 +37,8 @@
 		"webpack": "^5.44.0",
 		"webpack-cli": "^4.7.2",
 		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"@changesets/cli": "^2.16.0"
 	}
 }
