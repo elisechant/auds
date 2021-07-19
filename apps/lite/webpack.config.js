@@ -10,7 +10,6 @@ const webpackConfig = {
 	mode: isDev ? 'development' : 'production',
 	entry: {
 		"auds.tokens": './src/auds.tokens.ts',
-		"auds.variables": './src/auds.variables.ts',
 		"auds": './src/auds.ts',
 		"docs": './src/index.tsx',
 	},

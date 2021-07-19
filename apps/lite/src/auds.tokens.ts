@@ -1,1 +1,1 @@
-import './styles/_tokens-layer-1.scss';
+import './styles/auds.tokens.scss';
