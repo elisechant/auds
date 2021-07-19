@@ -1,37 +1,51 @@
 <!--
-  Light:  <footer class="au-footer au-body">
-  Dark:   <footer class="au-footer au-footer--dark au-body au-body--dark">
+  Light:  <nav class="au-main-nav">
+  Dark:   <nav class="au-main-nav au-main-nav--dark">
+
+  Note: Main nav requires feature detection to see if a user has javascript.
+        Please add a `no-js` class on html and replace it with `js` if enabled
+        https://www.paulirish.com/2009/avoiding-the-fouc-v3/
 -->
 
-
-<footer class="au-footer au-body" role="contentinfo">
+<nav class="au-main-nav" aria-label="main">
   <div class="container">
-    <nav class="au-footer__navigation row" aria-label="footer">
-      <div class="col-md-3 col-sm-6">
-        <h3 class="au-display-lg">Section</h3>
-        <ul class="au-link-list">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <h3 class="au-display-lg">Section</h3>
-        <ul class="au-link-list">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </div>
-    </nav>
     <div class="row">
-      <div class="col-sm-12">
-        <div class="au-footer__end">
-          <p>Footer text</p>
-          <img class="au-responsive-media-img" src="https://designsystem.gov.au/assets/img/placeholder/157X80.png" alt="Placeholder image">
-          <p><small>&copy; Commonwealth of Australia, <a href="https://github.com/govau/design-system-components/blob/master/LICENSE.md" rel="external license">MIT licensed</a></small></p>
+      <div class="col-md-12">
+        <div id="main-nav-default" class="au-main-nav__content">
+          <button
+            aria-controls="main-nav-default"
+            aria-expanded="false"
+            class="au-main-nav__toggle au-main-nav__toggle--open"
+            onClick="return AU.mainNav.Toggle( this )">
+            Menu
+          </button>
+          <div class="au-main-nav__menu">
+            <div class="au-main-nav__menu-inner">
+              <div class="au-main-nav__focus-trap-top"></div>
+              <button
+                aria-controls="main-nav-default"
+                class="au-main-nav__toggle au-main-nav__toggle--close"
+                onClick="return AU.mainNav.Toggle( this )">
+                Close
+              </button>
+              <ul class="au-link-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Get started</a></li>
+                <li class="active"><a href="#" aria-current="page">Components</a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+              <div class="au-main-nav__focus-trap-bottom"></div>
+            </div>
+          </div>
+          <div
+            class="au-main-nav__overlay"
+            aria-controls="main-nav-default"
+            onClick="return AU.mainNav.Toggle( this )">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</footer>
+</nav>

@@ -6,4 +6,5 @@ export default {
 };
 
 export const basic = () => accordionDefault;
+
 export const group = () => accordionGroup;

@@ -7,13 +7,12 @@
  *
  **************************************************************************************************************************************************************/
 
-var AU = AU || {};
-
+window.AU = window.AU || {};
 
 // This is necessary to use accordion javascript
-( function( AU ) {}( AU ));
+( function( AU ) {}( window.AU ));
 
 
 if( typeof module !== 'undefined' ) {
-	module.exports = AU;
+	module.exports = window.AU;
 }

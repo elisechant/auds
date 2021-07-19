@@ -7,7 +7,7 @@
  *
  **************************************************************************************************************************************************************/
 
-var AU = AU || {};
+window.AU = window.AU || {};
 
 ( function( AU ) {
 
@@ -333,9 +333,9 @@ var AU = AU || {};
 
 	AU.mainNav = mainNav;
 
-}( AU ));
+}( window.AU ));
 
 
 if( typeof module !== 'undefined' ) {
-	module.exports = AU;
+	module.exports = window.AU;
 }

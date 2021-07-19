@@ -7,7 +7,7 @@
  *
  **************************************************************************************************************************************************************/
 
-var AU = AU || {};
+window.AU = window.AU || {};
 
 ( function( AU ) {
 
@@ -329,16 +329,16 @@ var AU = AU || {};
 
 	AU.animate = animate;
 
-}( AU ));
+}( window.AU ));
 
 
 if( typeof module !== 'undefined' ) {
-	module.exports = AU;
+	module.exports = window.AU;
 }
 
 
 if( typeof exports !== 'undefined' ) {
 	Object.defineProperty( exports, "__esModule", { value: true } );
 
-	exports.default = AU;
+	exports.default = window.AU;
 }
