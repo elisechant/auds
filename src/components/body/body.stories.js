@@ -1,7 +1,7 @@
-import htmlElements from "./html-elements.html";
+import htmlElementsHtml from "./html-elements.html";
 
 export default {
 	title: "AuDS/Body",
 };
 
-export const htmlElements = () => htmlElements;
+export const htmlElements = () => htmlElementsHtml;
