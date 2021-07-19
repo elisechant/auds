@@ -5,5 +5,5 @@ export default {
 	title: "AuDS/Header",
 };
 
-export const withDefault = () => headerDefault;
-export const withHero = () => headerHero;
+export const basic = () => headerDefault;
+export const hero = () => headerHero;

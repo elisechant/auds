@@ -1,0 +1,20 @@
+<!--
+  Light:  <section class="au-accordion">
+  Dark:   <section class="au-accordion au-accordion--dark">
+
+  Note: Accordion requires feature detection to see if a user has javascript.
+        Please add a `no-js` class on html and replace it with `js` if enabled
+        https://www.paulirish.com/2009/avoiding-the-fouc-v3/
+-->
+
+<section class="au-accordion">
+  <button class="au-accordion__title js-au-accordion" aria-controls="accordion-default" aria-expanded="true" onclick="return AU.accordion.Toggle( this )">
+    Accordion title
+  </button>
+
+  <div class="au-accordion__body" id="accordion-default">
+    <div class="au-accordion__body-wrapper">
+      Here <a href="#url">is</a> some accordion content
+    </div>
+  </div>
+</section>

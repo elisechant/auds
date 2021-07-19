@@ -1,0 +1,45 @@
+<!--
+  Light:  <aside class="au-side-nav">
+  Dark:   <aside class="au-side-nav au-side-nav--dark">
+
+  Note: Side nav requires feature detection to see if a user has javascript.
+        Please add a `no-js` class on html and replace it with `js` if enabled
+        https://www.paulirish.com/2009/avoiding-the-fouc-v3/
+-->
+<aside class="au-side-nav au-accordion" aria-label="side navigation">
+  <button
+    class="au-side-nav__toggle au-accordion__title au-accordion--closed"
+    aria-controls="nav-default"
+    aria-expanded="false"
+    onclick="return AU.accordion.Toggle( this )"
+  >
+    In this section
+  </button>
+  <div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
+    <h2 class="au-sidenav__title">
+      <a href="#">Lodging your tax return</a>
+    </h2>
+    <ul class="au-link-list">
+      <li><a href="#">Do you need to lodge a tax return?</a></li>
+      <li><a href="#">Lodge online</a>
+        <ul class="au-link-list">
+          <li><a href="#">Pre-filling your online tax return</a></li>
+        </ul>
+      </li>
+      <li><a href="#">What's new for individuals</a></li>
+      <li><a href="#">Why you may receive a tax bill</a></li>
+      <li><a href="#">In detail</a>
+        <ul class="au-link-list">
+          <li><a href="#">Record keeping</a>
+            <ul class="au-link-list">
+              <li class="active"><span>Keeping your tax records</span></li>
+              <li><a href="#">Incorrect amounts</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Tax receipt</a></li>
+          <li><a href="#">Pre-fill availability</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</aside>

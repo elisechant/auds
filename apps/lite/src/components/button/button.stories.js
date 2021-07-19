@@ -9,9 +9,9 @@ export default {
 	title: "AuDS/Button",
 };
 
-export const withDefault = () => buttonDefault;
-export const withSecondary = () => buttonSecondary;
-export const withTertiary = () => buttonTertiary;
-export const withDisabled = () => buttonDisabled;
-export const withBlock = () => buttonBlock;
-export const withAsLinks = () => buttonAsLinks;
+export const basic = () => buttonDefault;
+export const secondary = () => buttonSecondary;
+export const tertiary = () => buttonTertiary;
+export const disabled = () => buttonDisabled;
+export const block = () => buttonBlock;
+export const asLinks = () => buttonAsLinks;

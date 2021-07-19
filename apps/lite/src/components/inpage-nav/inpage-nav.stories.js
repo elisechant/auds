@@ -1,7 +1,7 @@
 import defaultHtml from "./default.html";
 
 export default {
-	title: "AuDS/Footer",
+	title: "AuDS/Inpage nav",
 };
 
 export const basic = () => defaultHtml;
