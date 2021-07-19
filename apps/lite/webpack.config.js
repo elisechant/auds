@@ -9,7 +9,6 @@ const webpackConfig = {
 	entry: {
 		"auds.tokens": './src/auds.tokens.ts',
 		"auds": './src/auds.ts',
-		"docs": './src/index.tsx',
 	},
 	output: {
 		filename: `[name].js`,

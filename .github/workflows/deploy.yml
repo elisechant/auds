@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: yarn
     - name: Build
-      run: yarn build
+      run: yarn build-storybook
     - name: Deploy
-      run: npx surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      run: npx surge ./storybook-static ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
 

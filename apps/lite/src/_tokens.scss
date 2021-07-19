@@ -1,0 +1,70 @@
+@import 'auds-sass/core/lib/sass/_globals.scss';
+
+:root {
+	--au-theme-name: 'AU Light';
+
+	/**
+		Scales
+		See https://theme-ui.com/theme-spec/#theme-scales.
+	 */
+
+	--au-fonts-body: #{$AU-font};
+	--au-fonts-heading: 'inherit';
+	--au-fonts-monospace: #{$AU-font-monospace};
+
+	--au-fontSizes-xs: #{map-get( $AU-fontsize-map, 'xs' )};
+	--au-fontSizes-sm: #{map-get( $AU-fontsize-map, 'sm' )};
+	--au-fontSizes-md: #{map-get( $AU-fontsize-map, 'md' )};
+	--au-fontSizes-lg: #{map-get( $AU-fontsize-map, 'lg' )};
+	--au-fontSizes-xl: #{map-get( $AU-fontsize-map, 'xl' )};
+	--au-fontSizes-xxl: #{map-get( $AU-fontsize-map, 'xxl' )};
+
+	--au-lineheight-body: #{map-get( $AU-lineheight-map, 'default' )};
+	--au-lineheight-nospace: #{map-get( $AU-lineheight-map, 'nospace' )};
+	--au-lineheight-heading: #{map-get( $AU-lineheight-map, 'heading' )};
+
+	--au-colors-foregroundColor: '';
+	--au-colors-foregroundText: #{$AU-color-foreground-text};
+	--au-colors-foregroundAction: #{$AU-color-foreground-action};
+	--au-colors-foregroundFocus: #{$AU-color-foreground-focus};
+	--au-colors-foregroundHint: #{$AU-color-foreground-hint};
+	--au-colors-foregroundMuted: #{$AU-color-foreground-muted};
+	--au-colors-foregroundBorder: #{$AU-color-foreground-border};
+
+	--au-colors-backgroundColor: #{$AU-color-background};
+	--au-colors-backgroundAlt: #{$AU-color-background-alt};
+	--au-colors-backgroundShade: #{$AU-color-background-alt-shade};
+	--au-colors-backgroundHint: #{$AU-color-foreground-alt-hint};
+
+	--au-colors-outline: #{$AU-color-foreground-focus};
+
+	--au-colors-error: #{$AU-color-error};
+	--au-colors-success: #{$AU-color-success};
+	--au-colors-warning: #{$AU-color-warning};
+	--au-colors-info: #{$AU-color-info};
+
+	--au-radii-default: #{$AU-border-radius};
+
+	--au-sizes-width-mobilePortrait: #{$AU-media-xs};
+	--au-sizes-width-mobileLandscape: #{$AU-media-sm};
+	--au-sizes-width-tabletPortrait: #{$AU-media-md};
+	--au-sizes-width-tabletLandscape: #{$AU-media-lg};
+	--au-sizes-width-desktop: #{$AU-media-xl};
+	--au-sizes-width-max: #{$AU-maxwidth};
+
+	// TODO
+	--au-space-xxs: '';
+	--au-space-xs: '';
+	--au-space-sm: '';
+	--au-space-md: '';
+	--au-space-lg: '';
+	--au-space-xl: '';
+	--au-space-xxl: '';
+
+	--au-breakpoints-mobilePortrait: '@media (min-width: var(#{--au-media-mobilePortrait})';
+	--au-breakpoints-mobileLandscape: '@media (min-width: var(#{--au-media-mobileLandscape})';;
+	--au-breakpoints-tabletPortrait: '@media (min-width: var(#{--au-media-tabletPortrait})';
+	--au-breakpoints-tabletLandscape: '@media (min-width: var(#{--au-media-tabletLandscape})';;
+	--au-breakpoints-desktop: '@media (min-width: var(#{--au-media-desktop})';
+
+}

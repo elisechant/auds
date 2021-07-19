@@ -8,6 +8,20 @@ A simpler, vanilla AuDS.
 * Useful as a base for a UI Framework library. 
 * Design tokens can be used by external consumers.
 
+## Setup
+
+Install 
+
+    yarn 
+    
+Run dev environment 
+
+    yarn storybook
+    
+Build assets 
+
+    yarn build
+
 ## Exports 
 
 ### CSS
@@ -19,4 +33,8 @@ A simpler, vanilla AuDS.
 
 ### HTML
 
-Can be copied from the test site https://steelthreads.github.io/auds/ or copy code from [DTA Design System site](https://designsystem.gov.au/components/callout/). 
+Can be copied from html templates, such as ./src/components/button/button-default.html.
+
+### JavaScript
+
+Not yet ported. 
