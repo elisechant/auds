@@ -1,4 +1,3 @@
-// import './button.scss';
 import buttonDefault from "./button-default.html";
 import buttonSecondary from "./button-secondary.html";
 import buttonTertiary from "./button-tertiary.html";
