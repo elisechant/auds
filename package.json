@@ -24,6 +24,7 @@
 		"@storybook/addon-essentials": "^6.3.4",
 		"@storybook/addon-links": "^6.3.4",
 		"@storybook/html": "^6.3.4",
+		"@whitespace/storybook-addon-html": "^5.0.0",
 		"babel-core": "^6.26.3",
 		"babel-loader": "^8.2.2",
 		"babel-preset-react-app": "^10.0.0",
