@@ -1,4 +1,4 @@
-name: Merge checks
+name: PR checks
 on:
   push:
     branches:
@@ -6,6 +6,9 @@ on:
   pull_request:
     branches:
       - main
+defaults:
+  run:
+    working-directory: ./apps/lite
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
@@ -20,12 +23,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      run: |
-        npm install
-        npm run bootstrap
+      run: yarn
     - name: Run
-      run: |
-        npm run build
-        npm run test
-        npm run test:unit-test -- --passWithNoTests
+      run: yarn build
+
 

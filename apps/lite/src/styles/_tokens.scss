@@ -1,4 +1,4 @@
-@import '../../../../packages/core/lib/sass/_globals.scss';
+@import 'auds/core/lib/sass/_globals.scss';
 
 :root {
 	--au-theme-name: 'AU Light';
@@ -36,7 +36,7 @@
 	--au-colors-backgroundShade: #{$AU-color-background-alt-shade};
 	--au-colors-backgroundHint: #{$AU-color-foreground-alt-hint};
 
-	--au-colors-outline: $AU-color-foreground-focus;
+	--au-colors-outline: #{$AU-color-foreground-focus};
 
 	--au-colors-error: #{$AU-color-error};
 	--au-colors-success: #{$AU-color-success};
