@@ -3,11 +3,6 @@ on:
   push:
     branches:
       - main
-  workflow_run:
-    branches: [main]
-    workflows: ["PR checks"]
-    types:
-      - completed
 defaults:
   run:
     working-directory: ./apps/lite
@@ -26,9 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      run: |
-        cd apps/lite
-        yarn
+      run: yarn
     - name: Build
       run: yarn build
     - name: Deploy
