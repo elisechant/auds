@@ -22,6 +22,12 @@ Build assets:
 
     yarn build
 
+## Pull requests 
+
+Send a Changeset with Pull Requests to bump the package version:
+    
+    yarn feature
+
 ## Tests 
 
 ### Visual diff testing 
