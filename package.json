@@ -1,7 +1,15 @@
 {
-	"name": "@auds/lite",
-	"version": "0.1.0",
-	"description": "",
+	"name": "@elisechant/auds",
+	"version": "1.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/elisechant/auds.git"
+	},
+	"homepage": "https://auds.surge.sh",
+	"bugs": {
+		"url": "https://github.com/elisechant/auds/issues"
+	},
+	"description": "A simpler, vanilla AuDS (Australian Government Design System)",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "NODE_ENV=production webpack",
@@ -9,14 +17,21 @@
 		"serve": "npx http-server dist",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
-		"feature": "yarn changeset"
+		"feature": "yarn changeset",
+		"release": "yarn changeset version && yarn changeset publish"
 	},
 	"engines": {
 		"node": "14.17.0"
 	},
-	"keywords": [],
+	"keywords": [
+		"auds",
+		"@gov.au",
+		"design system",
+		"css",
+		"html"
+	],
 	"author": "Elise Chant",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"@changesets/cli": "^2.16.0",
 		"@storybook/addon-a11y": "^6.3.4",
