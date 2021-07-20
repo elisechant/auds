@@ -6,9 +6,9 @@ module.exports = {
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   "addons": [
+    '@whitespace/storybook-addon-html',
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    '@whitespace/storybook-addon-html',
   ],
   webpackFinal: async (config, { configType }) => {
     config.module.rules.push({
