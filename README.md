@@ -1,53 +1,25 @@
-# AuDS Lite
+# AuDS Vanilla
 
-🌐 https://auds.surge.sh/
+HTML, CSS and JavaScript that you can use in place of the [Australian Government Design System](https://designsystem.gov.au/components).
 
-A simpler, vanilla AuDS. 
+## How to use
 
-* Platform agnostic (HTML, CSS, JS) system.
-* Useful as a base for a UI Framework library. 
-* Design tokens can be used by external consumers.
+Include CSS in your project: 
 
-## Setup
+    <link href="https://cdn.jsdelivr.net/npm/@elisechant/auds@1.0.1/dist/auds.tokens.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@elisechant/auds@1.0.1/dist/auds.css" rel="stylesheet" /> 
 
-Install the correct Node:
+Include JavaScript in your project: 
 
-    nvm use
+    <script src="https://cdn.jsdelivr.net/npm/@elisechant/auds@1.0.1/dist/auds.js"></script>
+ 
+Or import in JavaScript:
 
-Install: 
-
-    yarn 
+    import "@elisechant/auds/dist/auds.tokens.css";
+    import "@elisechant/auds/dist/auds.css";
     
-Run dev environment: 
+    import "@elisechant/auds/dist/auds.js";
 
-    yarn storybook
-    
-Build assets:
+Copy and paste HTML for components from: 
 
-    yarn build
-
-## Exports 
-
-### CSS / JS
-
-| Asset name | Description |
-| - | - |
-| auds.tokens.css | Design tokens |
-| auds.css | Full compiled CSS source |
-| auds.js | Full compiled JS source |
-
-### HTML
-
-Can be copied from html templates, such as ./src/components/button/button-default.html.
-
-## Tests 
-
-### Visual diff testing 
-
-View test cases: 
-https://www.chromatic.com/build?appId=60f5de224a7e3f003ba711e0&number=1
-
-Look at state of main branch: 
-http://main--60f5de224a7e3f003ba711e0.chromatic.com/
-
-We might need to configure this: https://www.chromatic.com/docs/github-actions.
+    🌐 https://auds.surge.sh/
