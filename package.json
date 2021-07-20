@@ -1,6 +1,6 @@
 {
 	"name": "@elisechant/auds",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/elisechant/auds.git"
@@ -8,6 +8,9 @@
 	"homepage": "https://auds.surge.sh",
 	"bugs": {
 		"url": "https://github.com/elisechant/auds/issues"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"description": "A simpler, vanilla AuDS (Australian Government Design System)",
 	"scripts": {
