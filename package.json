@@ -1,6 +1,6 @@
 {
 	"name": "@elisechant/auds",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/elisechant/auds.git"
@@ -17,7 +17,8 @@
 		"serve": "npx http-server dist",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
-		"feature": "yarn changeset"
+		"feature": "yarn changeset",
+		"release": "yarn changeset version && yarn changeset publish"
 	},
 	"engines": {
 		"node": "14.17.0"
