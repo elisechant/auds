@@ -1,6 +1,6 @@
 {
 	"name": "@elisechant/auds",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/elisechant/auds.git"
@@ -21,8 +21,8 @@
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
 		"feature": "changeset",
-    "version-packages": "changeset version",
-    "release": "yarn build && changeset publish"
+		"version-packages": "changeset version",
+		"release": "yarn build && changeset publish"
 	},
 	"engines": {
 		"node": "^14"
@@ -58,5 +58,5 @@
 		"webpack": "^5.44.0",
 		"webpack-cli": "^4.7.2",
 		"webpack-dev-server": "^3.11.2"
-  }
+	}
 }
