@@ -1,5 +1,11 @@
 # @elisechant/auds
 
+## 1.0.3
+
+### Patch Changes
+
+- d9cd2faf: Adjust node version
+
 ## 1.0.2
 
 ### Patch Changes
